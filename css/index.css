@@ -115,17 +115,49 @@ html{
         display: flex;
         gap: 16px;
         & li{
+          diplay: block;
           flex: 1;
           height: 100px;
           background-color: red;
         }
       }
     }
+
     & #experiencias{
-      height: 100vh;
+      & h2{
+        font-size: 48px;
+      }
+      ul{
+        display: flex;
+        gap:16px;
+        & li{
+          flex: 1;
+          padding: 12px;
+          border-radius: 10px;
+          & img{
+            width: 100%;
+            aspect-ratio: 1;
+            display: block;
+          }
+          & h5{
+            margin-top: 16px;
+            font-size: 20px;
+            color: #7cffb0;
+            & span{
+              font-size: 14px;
+              color: #ffffff;
+            }
+          }
+          & h6{
+            color: #ffffff
+            margin-top: 6px;
+          }
+          background-color: red;
+        }
+      }
     }
     & #projetos{
-      height: 100vh;
+      
     }
   }
 }
